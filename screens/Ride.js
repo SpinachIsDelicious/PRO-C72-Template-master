@@ -86,10 +86,10 @@ export default class RideScreen extends Component {
              SHORT
           );*/}
 
-          {/* ToastAndroid.show(
+          { ToastAndroid.show(
             'You have rented the bike for next 1 hour. Enjoy your ride!!',
             ToastAndroid.SHORT
-          );*/}
+          );}
 
           this.setState({
             bikeAssigned: true,
@@ -213,10 +213,8 @@ export default class RideScreen extends Component {
             <TextInput
               style={[styles.textinput, { width: '82%' }]}
 
-              //onChangeText={() => this.setState({ userId: text })}
-              //onChangeText={this.setState({ userId: text })}
-              //onChangeText={(text) => this.setState({ userId: text })}
-              //onChangeText={(text) => ({ userId: text })}
+
+              onChangeText={(text) => this.setState({ userId: text })}
 
               placeholder={'User Id'}
               placeholderTextColor={'#FFFFFF'}
